@@ -46,18 +46,27 @@
         
     </div>
 
-    <div class="col-6 shadow-sm p-3 mb-5 bg-body-tertiary rounded">
-        @tamanoSeleccionado.Tamano
-        @tamanoSeleccionado.Precio
-        <br />
-        @tipoSeleccionado.Tipo
-        @tipoSeleccionado.Precio
-        <br />
-        Ingredientes
-        @costoIngredientes
-        <br />
-        <b>Precio Total: </b>
-        @totalPizza
+    <div class="col-3 shadow-sm p-1 mb-5 bg-body-tertiary rounded" border="2em">
+        <table class="table table-borderless">
+            <tablebody>
+                <tr class="table">
+                    <td>@tamanoSeleccionado.Tamano</td>
+                    <td>@tamanoSeleccionado.Precio</td>
+                </tr>
+                <tr class="table">
+                    <td>@tipoSeleccionado.Tipo</td>
+                    <td>@tipoSeleccionado.Precio</td>
+                </tr>
+                <tr class="table">
+                    <td>Ingredientes</td>
+                    <td>@costoIngredientes</td>
+                </tr>
+                <tr class="table-success">
+                    <td>Precio Total </td>
+                    <td>$ @totalPizza</td>
+                </tr>
+            </tablebody>
+        </table>
     </div>
 
     <div class="row">
